@@ -10,7 +10,7 @@ exports.handler = async function () {
 
   try {
     const res = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&pageSize=15&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=art+design&language=en&sortBy=publishedAt&pageSize=15&apiKey=${apiKey}`
     );
     const data = await res.json();
 
